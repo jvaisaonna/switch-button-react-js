@@ -1,5 +1,5 @@
-### switch-button-react-js
+## switch-button-react-js
 The Component of Boolean Button
 
-### Example
+## Example
 ![](example.gif)
