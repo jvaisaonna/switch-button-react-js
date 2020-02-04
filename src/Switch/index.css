@@ -1,0 +1,45 @@
+body {
+	font-size: 20px;
+}
+
+.comp-switch {
+	display: block;
+}
+
+.switch-button {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+
+	width: 4em;
+	height: 2em;
+	padding: 0 0.2em;
+
+	background-color: rgba(191, 191, 191, 1);
+	border-radius: 1em;
+
+	transition: 0.2s;
+}
+
+.switch-button > div {
+	width: 1.6em;
+	height: 1.6em;
+
+	background-color: #fff;
+
+	border-radius: 50%;
+	box-shadow: 1px 1px 5px #888888;
+	transition: 0.2s ease-in-out;
+}
+
+#switcher {
+	display: none;
+}
+
+#switcher:checked + label .switch-button {
+	background-color: rgba(64, 144, 255, 1);
+}
+
+#switcher:checked + label .switch-button div {
+	transform: translateX(2.4em);
+}
